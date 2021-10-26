@@ -54,7 +54,8 @@ class Huffman_arbol(object):
         if(not nodo):
             return
         elif nodo.nombre:
-            print(nodo.nombre + 'La codificación de Huffman de es:', end='')
+            # Recorremos Arbol de forma recursiva.
+            print(nodo.nombre + ', la codificación de Huffman de es:', end='')
             for i in range(longitud):
                 print(self.Buffer[i], end='')
             print('\n')
